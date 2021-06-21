@@ -52,6 +52,8 @@ namespace coffee.Model.DAO
                 {
                     info0.TenThucDon = info.TenThucDon;
                     info0.GiaTien = info.GiaTien;
+                    //info0.DanhSach = info.DanhSach;
+                    //info0.HoaDon = info.HoaDon;
 
                     db_.SaveChanges();
                 }

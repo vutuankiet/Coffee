@@ -241,3 +241,11 @@ D:\file bài tập\bài tập lập trình\back-end\Coffee\coffee\coffee\bin\Deb
 D:\file bài tập\bài tập lập trình\back-end\Coffee\coffee\coffee\obj\Debug\coffee.Presenstation.UINhanVien.frmNhanVien.resources
 D:\file bài tập\bài tập lập trình\back-end\Coffee\coffee\coffee\obj\Debug\coffee.Presenstation.UINhanVien.ucNhanVien.resources
 D:\file bài tập\bài tập lập trình\back-end\Coffee\coffee\coffee\obj\Debug\coffee.Presenstation.UIDashBoard.ucDashBoard.resources
+D:\file bài tập\bài tập lập trình\back-end\Coffee\coffee\coffee\obj\Debug\coffee.Presenstation.UIThucDon.frmThucDon.resources
+D:\file bài tập\bài tập lập trình\back-end\Coffee\coffee\coffee\obj\Debug\coffee.Presenstation.UIThucDon.ucThucDon.resources
+D:\file bài tập\bài tập lập trình\back-end\Coffee\coffee\coffee\obj\Debug\coffee.Presenstation.UIBan.frmBan.resources
+D:\file bài tập\bài tập lập trình\back-end\Coffee\coffee\coffee\obj\Debug\coffee.Presenstation.UIBan.ucBan.resources
+D:\file bài tập\bài tập lập trình\back-end\Coffee\coffee\coffee\obj\Debug\coffee.Presenstation.UIDanhSach.frmDanhSach.resources
+D:\file bài tập\bài tập lập trình\back-end\Coffee\coffee\coffee\obj\Debug\coffee.Presenstation.UIDanhSach.ucDanhSach.resources
+D:\file bài tập\bài tập lập trình\back-end\Coffee\coffee\coffee\obj\Debug\coffee.Presenstation.UIHoaDon.frmHoaDon.resources
+D:\file bài tập\bài tập lập trình\back-end\Coffee\coffee\coffee\obj\Debug\coffee.Presenstation.UIHoaDon.ucHoaDon.resources

@@ -63,7 +63,6 @@ namespace coffee.Presenstation.UINhanVien
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bckbGioiTinh = new System.Windows.Forms.CheckBox();
             this.bdtpNgaySinh = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.btnClose = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -177,23 +176,6 @@ namespace coffee.Presenstation.UINhanVien
             this.bunifuLabel2.Text = "ID Nhân Viên:";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel1
-            // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel1.Location = new System.Drawing.Point(58, 0);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(299, 41);
-            this.bunifuLabel1.TabIndex = 37;
-            this.bunifuLabel1.Text = "Thông Tin Nhân Viên";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bckbGioiTinh
             // 
@@ -514,7 +496,7 @@ namespace coffee.Presenstation.UINhanVien
             this.bunifuLabel7.Location = new System.Drawing.Point(58, 0);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel7.Size = new System.Drawing.Size(33, 4);
+            this.bunifuLabel7.Size = new System.Drawing.Size(290, 41);
             this.bunifuLabel7.TabIndex = 31;
             this.bunifuLabel7.Text = "Thông Tin Nhân Viên";
             this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1033,7 +1015,6 @@ namespace coffee.Presenstation.UINhanVien
             this.Controls.Add(this.bunifuLabel4);
             this.Controls.Add(this.bunifuLabel3);
             this.Controls.Add(this.bunifuLabel2);
-            this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.bckbGioiTinh);
             this.Controls.Add(this.bdtpNgaySinh);
             this.Controls.Add(this.btnClose);
@@ -1066,7 +1047,6 @@ namespace coffee.Presenstation.UINhanVien
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private System.Windows.Forms.CheckBox bckbGioiTinh;
         private Bunifu.UI.WinForms.BunifuDatePicker bdtpNgaySinh;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnClose;

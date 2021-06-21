@@ -518,6 +518,7 @@ namespace coffee.Presenstation.UINhanVien
             this.btxtKeyword.TextPlaceholder = "Search something here...";
             this.btxtKeyword.UseSystemPasswordChar = false;
             this.btxtKeyword.WordWrap = true;
+            this.btxtKeyword.TextChanged += new System.EventHandler(this.btxtKeyword_TextChanged);
             // 
             // bunifuPanel2
             // 
@@ -535,10 +536,13 @@ namespace coffee.Presenstation.UINhanVien
             this.bunifuPanel2.ShowBorders = true;
             this.bunifuPanel2.Size = new System.Drawing.Size(1133, 587);
             this.bunifuPanel2.TabIndex = 3;
+            this.bunifuPanel2.Click += new System.EventHandler(this.bunifuPanel2_Click);
             // 
             // bdgvNhanVien
             // 
             this.bdgvNhanVien.AllowCustomTheming = false;
+            this.bdgvNhanVien.AllowUserToAddRows = false;
+            this.bdgvNhanVien.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.bdgvNhanVien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -554,7 +558,7 @@ namespace coffee.Presenstation.UINhanVien
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bdgvNhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bdgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bdgvNhanVien.ColumnHeadersHeight = 40;
             this.bdgvNhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idNV,
             this.TenNV,
@@ -598,6 +602,7 @@ namespace coffee.Presenstation.UINhanVien
             this.bdgvNhanVien.HeaderForeColor = System.Drawing.Color.White;
             this.bdgvNhanVien.Location = new System.Drawing.Point(0, 0);
             this.bdgvNhanVien.Name = "bdgvNhanVien";
+            this.bdgvNhanVien.ReadOnly = true;
             this.bdgvNhanVien.RowHeadersVisible = false;
             this.bdgvNhanVien.RowHeadersWidth = 51;
             this.bdgvNhanVien.RowTemplate.Height = 40;
@@ -605,6 +610,7 @@ namespace coffee.Presenstation.UINhanVien
             this.bdgvNhanVien.Size = new System.Drawing.Size(1133, 587);
             this.bdgvNhanVien.TabIndex = 0;
             this.bdgvNhanVien.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.bdgvNhanVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bdgvNhanVien_CellContentClick);
             // 
             // idNV
             // 

@@ -171,6 +171,8 @@
     </Compile>
     <Compile Include="Model\DAO\BanDAO.cs" />
     <Compile Include="Model\DAO\BaseDAO.cs" />
+    <Compile Include="Model\DAO\DanhSachDAO.cs" />
+    <Compile Include="Model\DAO\HoaDonDAO.cs" />
     <Compile Include="Model\DAO\NhanVienDAO.cs" />
     <Compile Include="Model\DAO\ThucDonDAO.cs" />
     <Compile Include="Model\EF\Ban.cs">
@@ -218,11 +220,35 @@
     <Compile Include="Presenstation\UIBan\ucBan.Designer.cs">
       <DependentUpon>ucBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presenstation\UIDanhSach\frmDanhSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presenstation\UIDanhSach\frmDanhSach.Designer.cs">
+      <DependentUpon>frmDanhSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presenstation\UIDanhSach\ucDanhSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presenstation\UIDanhSach\ucDanhSach.Designer.cs">
+      <DependentUpon>ucDanhSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presenstation\UIDashBoard\ucDashBoard.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Presenstation\UIDashBoard\ucDashBoard.Designer.cs">
       <DependentUpon>ucDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presenstation\UIHoaDon\frmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presenstation\UIHoaDon\frmHoaDon.Designer.cs">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presenstation\UIHoaDon\ucHoaDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presenstation\UIHoaDon\ucHoaDon.Designer.cs">
+      <DependentUpon>ucHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="Presenstation\UINhanVien\frmNhanVien.cs">
       <SubType>Form</SubType>
@@ -256,8 +282,26 @@
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presenstation\UIBan\frmBan.resx">
+      <DependentUpon>frmBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presenstation\UIBan\ucBan.resx">
+      <DependentUpon>ucBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presenstation\UIDanhSach\frmDanhSach.resx">
+      <DependentUpon>frmDanhSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presenstation\UIDanhSach\ucDanhSach.resx">
+      <DependentUpon>ucDanhSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presenstation\UIDashBoard\ucDashBoard.resx">
       <DependentUpon>ucDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presenstation\UIHoaDon\frmHoaDon.resx">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presenstation\UIHoaDon\ucHoaDon.resx">
+      <DependentUpon>ucHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presenstation\UINhanVien\frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
@@ -267,6 +311,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presenstation\UIThucDon\frmThucDon.resx">
       <DependentUpon>frmThucDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presenstation\UIThucDon\ucThucDon.resx">
+      <DependentUpon>ucThucDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

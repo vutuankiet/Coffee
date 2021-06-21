@@ -85,5 +85,20 @@ namespace coffee.Presenstation.UINhanVien
         {
 
         }
+
+        private void bdgvNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btxtKeyword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuPanel2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

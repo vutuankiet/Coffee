@@ -82,5 +82,30 @@ namespace coffee
         {
             AddControl(new Presenstation.UIDashBoard.ucDashBoard());
         }
+
+        private void bbtbThucDon_Click(object sender, EventArgs e)
+        {
+            AddControl(new Presenstation.UIThucDon.ucThucDon());
+        }
+
+        private void bbtnBan_Click(object sender, EventArgs e)
+        {
+            AddControl(new Presenstation.UIBan.ucBan());
+        }
+
+        private void bbtnDanhSach_Click(object sender, EventArgs e)
+        {
+            AddControl(new Presenstation.UIDanhSach.ucDanhSach());
+        }
+
+        private void bbtnHoaDon_Click(object sender, EventArgs e)
+        {
+            AddControl(new Presenstation.UIHoaDon.ucHoaDon());
+        }
+
+        private void bunifuLabel7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
