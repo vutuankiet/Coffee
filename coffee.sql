@@ -1,71 +1,64 @@
-﻿CREATE DATABASE QuanLyQuanCafe
+﻿CREATE DATABASE QuanLyCaPhe
 GO
 
-USE QuanLyQuanCafe
+USE QuanLyCaPhe
 GO
 
--- Food
--- Table
--- FoodCategory
--- Account
--- Bill
--- BillInfo
+-- Ban
+-- NhanVien
+-- DanhSach
+-- ThucDon
+-- HoaDon
 
-CREATE TABLE TableFood
+
+
+CREATE TABLE NhanVien
 (
-	id INT IDENTITY PRIMARY KEY,
-	name NVARCHAR(100) NOT NULL DEFAULT N'Bàn chưa có tên',
-	status NVARCHAR(100) NOT NULL DEFAULT N'Trống'	-- Trống || Có người
+	idNV CHAR(10) PRIMARY KEY,
+	TenNV NVARCHAR(50) NOT NULL,
+	GioiTinh NVARCHAR(5) NOT NULL,
+	NgaySinh DATE NOT NULL,
+	QueQuan NVARCHAR(50) NOT NULL,
+	DiaChi NVARCHAR(100) NOT NULL,
+	Email CHAR(50) NOT NULL,
+	SDT CHAR(10) NOT NULL,
 )
 GO
 
-CREATE TABLE Account
+CREATE TABLE DanhSach
 (
-	UserName NVARCHAR(100) PRIMARY KEY,	
-	DisplayName NVARCHAR(100) NOT NULL DEFAULT N'Kter',
-	PassWord NVARCHAR(1000) NOT NULL DEFAULT 0,
-	Type INT NOT NULL  DEFAULT 0 -- 1: admin && 0: staff
+	idDanhSach CHAR(10) PRIMARY KEY,
+	TenThucDon NVARCHAR(100) NOT NULL,
 )
 GO
 
-CREATE TABLE FoodCategory
+CREATE TABLE ThucDon
 (
-	id INT IDENTITY PRIMARY KEY,
-	name NVARCHAR(100) NOT NULL DEFAULT N'Chưa đặt tên'
-)
-GO
-
-CREATE TABLE Food
-(
-	id INT IDENTITY PRIMARY KEY,
-	name NVARCHAR(100) NOT NULL DEFAULT N'Chưa đặt tên',
-	idCategory INT NOT NULL,
-	price FLOAT NOT NULL DEFAULT 0
+	idThucDon CHAR(10) PRIMARY KEY,
+	TenThucDon NVARCHAR(100) NOT NULL,
+	GiaTien NVARCHAR(100) NOT NULL,
 	
-	FOREIGN KEY (idCategory) REFERENCES dbo.FoodCategory(id)
+	FOREIGN KEY (idThucDon) REFERENCES dbo.DanhSach(idDanhSach)
 )
 GO
 
-CREATE TABLE Bill
+CREATE TABLE HoaDon
 (
-	id INT IDENTITY PRIMARY KEY,
-	DateCheckIn DATE NOT NULL DEFAULT GETDATE(),
-	DateCheckOut DATE,
-	idTable INT NOT NULL,
-	status INT NOT NULL DEFAULT 0 -- 1: đã thanh toán && 0: chưa thanh toán
-	
-	FOREIGN KEY (idTable) REFERENCES dbo.TableFood(id)
-)
-GO
+	idHoaDon CHAR(10) PRIMARY KEY,
+	TenBan NVARCHAR(100) NOT NULL,
+	TenThucDon NVARCHAR(100) NOT NULL,
+	ThoiDiemDen DATE NOT NULL DEFAULT GETDATE(),
+	ThoiDiemRa DATE,
+	TrangThai NVARCHAR(50) NOT NULL,
 
-CREATE TABLE BillInfo
+	FOREIGN KEY (idHoaDon) REFERENCES dbo.ThucDon(idThucDon)
+)
+
+CREATE TABLE Ban
 (
-	id INT IDENTITY PRIMARY KEY,
-	idBill INT NOT NULL,
-	idFood INT NOT NULL,
-	count INT NOT NULL DEFAULT 0
-	
-	FOREIGN KEY (idBill) REFERENCES dbo.Bill(id),
-	FOREIGN KEY (idFood) REFERENCES dbo.Food(id)
+	idBan CHAR(10) PRIMARY KEY,
+	TenBan NVARCHAR(100) NOT NULL,
+	TrangThai NVARCHAR(100) NOT NULL,
+	FOREIGN KEY (idBan) REFERENCES dbo.HoaDon(idHoaDon)
 )
 GO

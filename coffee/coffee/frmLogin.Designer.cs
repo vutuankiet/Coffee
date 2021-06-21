@@ -30,15 +30,15 @@ namespace coffee
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -46,12 +46,12 @@ namespace coffee
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuSeparator2 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bbtnLogin = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btxtPassWord = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btxtUserName = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bbtnLogin = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
@@ -157,193 +157,6 @@ namespace coffee
             this.bunifuPanel1.TabIndex = 7;
             this.bunifuPanel1.Click += new System.EventHandler(this.bunifuPanel1_Click);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(32, 162);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 25);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "PassWord:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(32, 68);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 25);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "UserName:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(134, 13);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 32);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Login";
-            // 
-            // btxtPassWord
-            // 
-            this.btxtPassWord.AcceptsReturn = false;
-            this.btxtPassWord.AcceptsTab = false;
-            this.btxtPassWord.AnimationSpeed = 200;
-            this.btxtPassWord.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.btxtPassWord.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.btxtPassWord.BackColor = System.Drawing.Color.Transparent;
-            this.btxtPassWord.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btxtPassWord.BackgroundImage")));
-            this.btxtPassWord.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.btxtPassWord.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btxtPassWord.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btxtPassWord.BorderColorIdle = System.Drawing.Color.White;
-            this.btxtPassWord.BorderRadius = 28;
-            this.btxtPassWord.BorderThickness = 1;
-            this.btxtPassWord.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.btxtPassWord.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btxtPassWord.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btxtPassWord.DefaultText = "";
-            this.btxtPassWord.FillColor = System.Drawing.Color.Black;
-            this.btxtPassWord.ForeColor = System.Drawing.Color.White;
-            this.btxtPassWord.HideSelection = true;
-            this.btxtPassWord.IconLeft = ((System.Drawing.Image)(resources.GetObject("btxtPassWord.IconLeft")));
-            this.btxtPassWord.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.btxtPassWord.IconPadding = 10;
-            this.btxtPassWord.IconRight = null;
-            this.btxtPassWord.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.btxtPassWord.Lines = new string[0];
-            this.btxtPassWord.Location = new System.Drawing.Point(37, 190);
-            this.btxtPassWord.MaxLength = 32767;
-            this.btxtPassWord.MinimumSize = new System.Drawing.Size(1, 1);
-            this.btxtPassWord.Modified = false;
-            this.btxtPassWord.Multiline = false;
-            this.btxtPassWord.Name = "btxtPassWord";
-            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.btxtPassWord.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.btxtPassWord.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.btxtPassWord.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.White;
-            stateProperties12.FillColor = System.Drawing.Color.Black;
-            stateProperties12.ForeColor = System.Drawing.Color.White;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.btxtPassWord.OnIdleState = stateProperties12;
-            this.btxtPassWord.Padding = new System.Windows.Forms.Padding(3);
-            this.btxtPassWord.PasswordChar = '*';
-            this.btxtPassWord.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.btxtPassWord.PlaceholderText = "Enter PassWord here...";
-            this.btxtPassWord.ReadOnly = false;
-            this.btxtPassWord.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.btxtPassWord.SelectedText = "";
-            this.btxtPassWord.SelectionLength = 0;
-            this.btxtPassWord.SelectionStart = 0;
-            this.btxtPassWord.ShortcutsEnabled = true;
-            this.btxtPassWord.Size = new System.Drawing.Size(282, 37);
-            this.btxtPassWord.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.btxtPassWord.TabIndex = 11;
-            this.btxtPassWord.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btxtPassWord.TextMarginBottom = 0;
-            this.btxtPassWord.TextMarginLeft = 3;
-            this.btxtPassWord.TextMarginTop = 0;
-            this.btxtPassWord.TextPlaceholder = "Enter PassWord here...";
-            this.btxtPassWord.UseSystemPasswordChar = false;
-            this.btxtPassWord.WordWrap = true;
-            this.btxtPassWord.TextChanged += new System.EventHandler(this.bunifuTextBox2_TextChanged);
-            // 
-            // btxtUserName
-            // 
-            this.btxtUserName.AcceptsReturn = false;
-            this.btxtUserName.AcceptsTab = false;
-            this.btxtUserName.AnimationSpeed = 200;
-            this.btxtUserName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.btxtUserName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.btxtUserName.BackColor = System.Drawing.Color.Transparent;
-            this.btxtUserName.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btxtUserName.BackgroundImage")));
-            this.btxtUserName.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.btxtUserName.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btxtUserName.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btxtUserName.BorderColorIdle = System.Drawing.Color.Silver;
-            this.btxtUserName.BorderRadius = 28;
-            this.btxtUserName.BorderThickness = 1;
-            this.btxtUserName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.btxtUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btxtUserName.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btxtUserName.DefaultText = "";
-            this.btxtUserName.FillColor = System.Drawing.Color.Black;
-            this.btxtUserName.ForeColor = System.Drawing.Color.White;
-            this.btxtUserName.HideSelection = true;
-            this.btxtUserName.IconLeft = ((System.Drawing.Image)(resources.GetObject("btxtUserName.IconLeft")));
-            this.btxtUserName.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.btxtUserName.IconPadding = 10;
-            this.btxtUserName.IconRight = null;
-            this.btxtUserName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.btxtUserName.Lines = new string[0];
-            this.btxtUserName.Location = new System.Drawing.Point(37, 96);
-            this.btxtUserName.MaxLength = 32767;
-            this.btxtUserName.MinimumSize = new System.Drawing.Size(1, 1);
-            this.btxtUserName.Modified = false;
-            this.btxtUserName.Multiline = false;
-            this.btxtUserName.Name = "btxtUserName";
-            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties13.FillColor = System.Drawing.Color.Empty;
-            stateProperties13.ForeColor = System.Drawing.Color.Empty;
-            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.btxtUserName.OnActiveState = stateProperties13;
-            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.btxtUserName.OnDisabledState = stateProperties14;
-            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties15.FillColor = System.Drawing.Color.Empty;
-            stateProperties15.ForeColor = System.Drawing.Color.Empty;
-            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.btxtUserName.OnHoverState = stateProperties15;
-            stateProperties16.BorderColor = System.Drawing.Color.Silver;
-            stateProperties16.FillColor = System.Drawing.Color.Black;
-            stateProperties16.ForeColor = System.Drawing.Color.White;
-            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.btxtUserName.OnIdleState = stateProperties16;
-            this.btxtUserName.Padding = new System.Windows.Forms.Padding(3);
-            this.btxtUserName.PasswordChar = '\0';
-            this.btxtUserName.PlaceholderForeColor = System.Drawing.Color.White;
-            this.btxtUserName.PlaceholderText = "Enter UserName here...";
-            this.btxtUserName.ReadOnly = false;
-            this.btxtUserName.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.btxtUserName.SelectedText = "";
-            this.btxtUserName.SelectionLength = 0;
-            this.btxtUserName.SelectionStart = 0;
-            this.btxtUserName.ShortcutsEnabled = true;
-            this.btxtUserName.Size = new System.Drawing.Size(282, 37);
-            this.btxtUserName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.btxtUserName.TabIndex = 9;
-            this.btxtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btxtUserName.TextMarginBottom = 0;
-            this.btxtUserName.TextMarginLeft = 3;
-            this.btxtUserName.TextMarginTop = 0;
-            this.btxtUserName.TextPlaceholder = "Enter UserName here...";
-            this.btxtUserName.UseSystemPasswordChar = false;
-            this.btxtUserName.WordWrap = true;
-            this.btxtUserName.TextChanged += new System.EventHandler(this.bunifuTextBox1_TextChanged);
-            // 
             // bbtnLogin
             // 
             this.bbtnLogin.AllowAnimations = true;
@@ -363,11 +176,11 @@ namespace coffee
             this.bbtnLogin.ColorContrastOnClick = 45;
             this.bbtnLogin.ColorContrastOnHover = 45;
             this.bbtnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.bbtnLogin.CustomizableEdges = borderEdges2;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.bbtnLogin.CustomizableEdges = borderEdges1;
             this.bbtnLogin.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bbtnLogin.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bbtnLogin.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -433,6 +246,195 @@ namespace coffee
             this.bbtnLogin.TextPadding = new System.Windows.Forms.Padding(0);
             this.bbtnLogin.UseDefaultRadiusAndThickness = true;
             this.bbtnLogin.Click += new System.EventHandler(this.bbtnLogin_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(32, 162);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(119, 25);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "PassWord:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(32, 68);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(120, 25);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "UserName:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(134, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 32);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Login";
+            // 
+            // btxtPassWord
+            // 
+            this.btxtPassWord.AcceptsReturn = false;
+            this.btxtPassWord.AcceptsTab = false;
+            this.btxtPassWord.AnimationSpeed = 200;
+            this.btxtPassWord.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.btxtPassWord.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.btxtPassWord.BackColor = System.Drawing.Color.Transparent;
+            this.btxtPassWord.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btxtPassWord.BackgroundImage")));
+            this.btxtPassWord.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.btxtPassWord.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btxtPassWord.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btxtPassWord.BorderColorIdle = System.Drawing.Color.White;
+            this.btxtPassWord.BorderRadius = 28;
+            this.btxtPassWord.BorderThickness = 1;
+            this.btxtPassWord.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.btxtPassWord.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btxtPassWord.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btxtPassWord.DefaultText = "Admin";
+            this.btxtPassWord.FillColor = System.Drawing.Color.Black;
+            this.btxtPassWord.ForeColor = System.Drawing.Color.White;
+            this.btxtPassWord.HideSelection = true;
+            this.btxtPassWord.IconLeft = ((System.Drawing.Image)(resources.GetObject("btxtPassWord.IconLeft")));
+            this.btxtPassWord.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.btxtPassWord.IconPadding = 10;
+            this.btxtPassWord.IconRight = null;
+            this.btxtPassWord.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.btxtPassWord.Lines = new string[] {
+        "Admin"};
+            this.btxtPassWord.Location = new System.Drawing.Point(37, 190);
+            this.btxtPassWord.MaxLength = 32767;
+            this.btxtPassWord.MinimumSize = new System.Drawing.Size(1, 1);
+            this.btxtPassWord.Modified = false;
+            this.btxtPassWord.Multiline = false;
+            this.btxtPassWord.Name = "btxtPassWord";
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.btxtPassWord.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.btxtPassWord.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.btxtPassWord.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.White;
+            stateProperties4.FillColor = System.Drawing.Color.Black;
+            stateProperties4.ForeColor = System.Drawing.Color.White;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.btxtPassWord.OnIdleState = stateProperties4;
+            this.btxtPassWord.Padding = new System.Windows.Forms.Padding(3);
+            this.btxtPassWord.PasswordChar = '*';
+            this.btxtPassWord.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.btxtPassWord.PlaceholderText = "Enter PassWord here...";
+            this.btxtPassWord.ReadOnly = false;
+            this.btxtPassWord.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.btxtPassWord.SelectedText = "";
+            this.btxtPassWord.SelectionLength = 0;
+            this.btxtPassWord.SelectionStart = 5;
+            this.btxtPassWord.ShortcutsEnabled = true;
+            this.btxtPassWord.Size = new System.Drawing.Size(282, 37);
+            this.btxtPassWord.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.btxtPassWord.TabIndex = 11;
+            this.btxtPassWord.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btxtPassWord.TextMarginBottom = 0;
+            this.btxtPassWord.TextMarginLeft = 3;
+            this.btxtPassWord.TextMarginTop = 0;
+            this.btxtPassWord.TextPlaceholder = "Enter PassWord here...";
+            this.btxtPassWord.UseSystemPasswordChar = false;
+            this.btxtPassWord.WordWrap = true;
+            this.btxtPassWord.TextChanged += new System.EventHandler(this.bunifuTextBox2_TextChanged);
+            // 
+            // btxtUserName
+            // 
+            this.btxtUserName.AcceptsReturn = false;
+            this.btxtUserName.AcceptsTab = false;
+            this.btxtUserName.AnimationSpeed = 200;
+            this.btxtUserName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.btxtUserName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.btxtUserName.BackColor = System.Drawing.Color.Transparent;
+            this.btxtUserName.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btxtUserName.BackgroundImage")));
+            this.btxtUserName.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.btxtUserName.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btxtUserName.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btxtUserName.BorderColorIdle = System.Drawing.Color.Silver;
+            this.btxtUserName.BorderRadius = 28;
+            this.btxtUserName.BorderThickness = 1;
+            this.btxtUserName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.btxtUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btxtUserName.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btxtUserName.DefaultText = "Admin";
+            this.btxtUserName.FillColor = System.Drawing.Color.Black;
+            this.btxtUserName.ForeColor = System.Drawing.Color.White;
+            this.btxtUserName.HideSelection = true;
+            this.btxtUserName.IconLeft = ((System.Drawing.Image)(resources.GetObject("btxtUserName.IconLeft")));
+            this.btxtUserName.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.btxtUserName.IconPadding = 10;
+            this.btxtUserName.IconRight = null;
+            this.btxtUserName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.btxtUserName.Lines = new string[] {
+        "Admin"};
+            this.btxtUserName.Location = new System.Drawing.Point(37, 96);
+            this.btxtUserName.MaxLength = 32767;
+            this.btxtUserName.MinimumSize = new System.Drawing.Size(1, 1);
+            this.btxtUserName.Modified = false;
+            this.btxtUserName.Multiline = false;
+            this.btxtUserName.Name = "btxtUserName";
+            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.btxtUserName.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.btxtUserName.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.btxtUserName.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Silver;
+            stateProperties8.FillColor = System.Drawing.Color.Black;
+            stateProperties8.ForeColor = System.Drawing.Color.White;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.btxtUserName.OnIdleState = stateProperties8;
+            this.btxtUserName.Padding = new System.Windows.Forms.Padding(3);
+            this.btxtUserName.PasswordChar = '\0';
+            this.btxtUserName.PlaceholderForeColor = System.Drawing.Color.White;
+            this.btxtUserName.PlaceholderText = "Enter UserName here...";
+            this.btxtUserName.ReadOnly = false;
+            this.btxtUserName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.btxtUserName.SelectedText = "";
+            this.btxtUserName.SelectionLength = 0;
+            this.btxtUserName.SelectionStart = 5;
+            this.btxtUserName.ShortcutsEnabled = true;
+            this.btxtUserName.Size = new System.Drawing.Size(282, 37);
+            this.btxtUserName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.btxtUserName.TabIndex = 9;
+            this.btxtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btxtUserName.TextMarginBottom = 0;
+            this.btxtUserName.TextMarginLeft = 3;
+            this.btxtUserName.TextMarginTop = 0;
+            this.btxtUserName.TextPlaceholder = "Enter UserName here...";
+            this.btxtUserName.UseSystemPasswordChar = false;
+            this.btxtUserName.WordWrap = true;
+            this.btxtUserName.TextChanged += new System.EventHandler(this.bunifuTextBox1_TextChanged);
             // 
             // frmLogin
             // 

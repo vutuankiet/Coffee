@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuanLyCaPheModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Ban">
+    <Key>
+      <PropertyRef Name="idBan" />
+    </Key>
+    <Property Name="idBan" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="TenBan" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="TrangThai" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DanhSach">
+    <Key>
+      <PropertyRef Name="idDanhSach" />
+    </Key>
+    <Property Name="idDanhSach" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="TenThucDon" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HoaDon">
+    <Key>
+      <PropertyRef Name="idHoaDon" />
+    </Key>
+    <Property Name="idHoaDon" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="TenBan" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="TenThucDon" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ThoiDiemDen" Type="date" Nullable="false" />
+    <Property Name="ThoiDiemRa" Type="date" />
+    <Property Name="TrangThai" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NhanVien">
+    <Key>
+      <PropertyRef Name="idNV" />
+    </Key>
+    <Property Name="idNV" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="TenNV" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GioiTinh" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="NgaySinh" Type="date" Nullable="false" />
+    <Property Name="QueQuan" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Email" Type="char" MaxLength="50" Nullable="false" />
+    <Property Name="SDT" Type="char" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="ThucDon">
+    <Key>
+      <PropertyRef Name="idThucDon" />
+    </Key>
+    <Property Name="idThucDon" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="TenThucDon" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="GiaTien" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Ban__idBan__1B0907CE">
+    <End Role="HoaDon" Type="Self.HoaDon" Multiplicity="1" />
+    <End Role="Ban" Type="Self.Ban" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="HoaDon">
+        <PropertyRef Name="idHoaDon" />
+      </Principal>
+      <Dependent Role="Ban">
+        <PropertyRef Name="idBan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HoaDon__idHoaDon__182C9B23">
+    <End Role="ThucDon" Type="Self.ThucDon" Multiplicity="1" />
+    <End Role="HoaDon" Type="Self.HoaDon" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="ThucDon">
+        <PropertyRef Name="idThucDon" />
+      </Principal>
+      <Dependent Role="HoaDon">
+        <PropertyRef Name="idHoaDon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ThucDon__idThucD__145C0A3F">
+    <End Role="DanhSach" Type="Self.DanhSach" Multiplicity="1" />
+    <End Role="ThucDon" Type="Self.ThucDon" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="DanhSach">
+        <PropertyRef Name="idDanhSach" />
+      </Principal>
+      <Dependent Role="ThucDon">
+        <PropertyRef Name="idThucDon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QuanLyCaPheModelStoreContainer">
+    <EntitySet Name="Ban" EntityType="Self.Ban" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DanhSach" EntityType="Self.DanhSach" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HoaDon" EntityType="Self.HoaDon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NhanVien" EntityType="Self.NhanVien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ThucDon" EntityType="Self.ThucDon" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Ban__idBan__1B0907CE" Association="Self.FK__Ban__idBan__1B0907CE">
+      <End Role="HoaDon" EntitySet="HoaDon" />
+      <End Role="Ban" EntitySet="Ban" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HoaDon__idHoaDon__182C9B23" Association="Self.FK__HoaDon__idHoaDon__182C9B23">
+      <End Role="ThucDon" EntitySet="ThucDon" />
+      <End Role="HoaDon" EntitySet="HoaDon" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ThucDon__idThucD__145C0A3F" Association="Self.FK__ThucDon__idThucD__145C0A3F">
+      <End Role="DanhSach" EntitySet="DanhSach" />
+      <End Role="ThucDon" EntitySet="ThucDon" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
