@@ -156,7 +156,7 @@ namespace coffee
             this.bunifuLabel14.Location = new System.Drawing.Point(146, 15);
             this.bunifuLabel14.Name = "bunifuLabel14";
             this.bunifuLabel14.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel14.Size = new System.Drawing.Size(74, 23);
+            this.bunifuLabel14.Size = new System.Drawing.Size(14, 4);
             this.bunifuLabel14.TabIndex = 20;
             this.bunifuLabel14.Text = "Customer";
             this.bunifuLabel14.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -248,7 +248,7 @@ namespace coffee
             this.bunifuLabel11.Location = new System.Drawing.Point(170, 15);
             this.bunifuLabel11.Name = "bunifuLabel11";
             this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel11.Size = new System.Drawing.Size(49, 23);
+            this.bunifuLabel11.Size = new System.Drawing.Size(10, 4);
             this.bunifuLabel11.TabIndex = 23;
             this.bunifuLabel11.Text = "Empty";
             this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -759,6 +759,7 @@ namespace coffee
             toggleState6.BorderThicknessInner = 1;
             this.bunifuToggleSwitch2.ToggleStateOn = toggleState6;
             this.bunifuToggleSwitch2.Value = true;
+            this.bunifuToggleSwitch2.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs>(this.bunifuToggleSwitch2_CheckedChanged);
             // 
             // bunifuLabel8
             // 

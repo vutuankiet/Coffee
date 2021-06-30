@@ -769,6 +769,7 @@ namespace coffee.Presenstation.UIDashBoard
             toggleState3.BorderThicknessInner = 1;
             this.bunifuToggleSwitch3.ToggleStateOn = toggleState3;
             this.bunifuToggleSwitch3.Value = true;
+            this.bunifuToggleSwitch3.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs>(this.bunifuToggleSwitch3_CheckedChanged);
             // 
             // bunifuChartCanvas2
             // 
@@ -945,6 +946,7 @@ namespace coffee.Presenstation.UIDashBoard
             toggleState6.BorderThicknessInner = 1;
             this.bunifuToggleSwitch2.ToggleStateOn = toggleState6;
             this.bunifuToggleSwitch2.Value = true;
+            this.bunifuToggleSwitch2.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs>(this.bunifuToggleSwitch2_CheckedChanged);
             // 
             // bunifuLabel8
             // 
@@ -1007,6 +1009,7 @@ namespace coffee.Presenstation.UIDashBoard
             toggleState9.BorderThicknessInner = 1;
             this.bunifuToggleSwitch1.ToggleStateOn = toggleState9;
             this.bunifuToggleSwitch1.Value = true;
+            this.bunifuToggleSwitch1.CheckedChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs>(this.bunifuToggleSwitch1_CheckedChanged);
             // 
             // bunifuChartCanvas1
             // 
